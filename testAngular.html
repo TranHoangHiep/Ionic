@@ -1,0 +1,17 @@
+<!DOCTYPE html>
+<html ng-app="">
+<head>
+	<title></title>
+	<script type="text/javascript" src="angular.js"></script>
+</head>
+<body>
+	<h1>Login Form</h1>
+	<form action="/authenticate" method="post">
+		<label>Email Address</label>
+		<input type="email" name="email" ng-model="email" required>
+		<label>Password</label>
+		<input type="password" name="password" ng-model="password" required>
+			<input type="submit" ng-disabled="!email || !password" value="Login">
+	</form>
+</body>
+</html>
